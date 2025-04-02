@@ -1,0 +1,1 @@
+savedcmd_/home/niyue/gitRepositories/acer-wmi-for-PHN16-72/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/niyue/gitRepositories/acer-wmi-for-PHN16-72/Module.symvers -T /home/niyue/gitRepositories/acer-wmi-for-PHN16-72/modules.order -i Module.symvers -e 

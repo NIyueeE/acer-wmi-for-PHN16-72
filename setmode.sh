@@ -61,12 +61,19 @@ if [[ $# -ne 1 ]] || [[ "$1" =~ [^0-9] ]]; then
     exit 1
 fi
 
-declare -a profiles=(
+declare -a profiles_display=(
     "${LOW_POWER}low-power${NC}"
     "${QUIET}quiet${NC}"
     "${BALANCED}balanced${NC}"
     "${BALANCED_PERFORMANCE}balanced-performance${NC}"
     "${PERFORMANCE}performance${NC}"
+)
+declare -a profiles=(
+    "low-power"
+    "quiet"
+    "balanced"
+    "balanced-performance"
+    "performance"
 )
 
 selected=$1
@@ -79,12 +86,12 @@ if (( selected < 0 || selected > 4 )); then
 fi
 
 # 获取对应的profile
-profile_raw=${profiles[$selected]%%${NC}*}  # 提取原始字符串
-profile_display=${profiles[$selected]}      # 获取带颜色的显示字符串
+profile=${profiles[$selected]}
+profile_display=${profiles_display[$selected]}      # 获取带颜色的显示字符串
 
 # 执行设置命令
 echo -e "${BLUE}» 正在设置电源方案为：${NC} ${profile_display}"
-if echo "$profile_display" | sudo tee /sys/firmware/acpi/platform_profile >/dev/null; then
+if echo "$profile" | sudo tee /sys/firmware/acpi/platform_profile >/dev/null; then
     echo -e "${GREEN}✓ 已成功应用${NC} ${profile_display}"
 else
     echo -e "${RED}✗ 方案设置失败，请检查权限${NC}"

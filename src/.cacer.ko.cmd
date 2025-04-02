@@ -1,0 +1,1 @@
+savedcmd_/home/niyue/gitRepositories/acer-wmi-for-PHN16-72/src/cacer.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/niyue/gitRepositories/acer-wmi-for-PHN16-72/src/cacer.ko /home/niyue/gitRepositories/acer-wmi-for-PHN16-72/src/cacer.o /home/niyue/gitRepositories/acer-wmi-for-PHN16-72/src/cacer.mod.o
