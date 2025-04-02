@@ -1,1 +1,0 @@
-savedcmd_/home/niyue/gitRepositories/acer-wmi-for-PHN16-72/src/cacer.mod := printf '%s\n'   src/cacer.o | awk '!x[$$0]++ { print("/home/niyue/gitRepositories/acer-wmi-for-PHN16-72/"$$0) }' > /home/niyue/gitRepositories/acer-wmi-for-PHN16-72/src/cacer.mod

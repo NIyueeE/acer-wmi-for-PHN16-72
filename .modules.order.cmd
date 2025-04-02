@@ -1,1 +1,0 @@
-savedcmd_/home/niyue/gitRepositories/acer-wmi-for-PHN16-72/modules.order := {   echo /home/niyue/gitRepositories/acer-wmi-for-PHN16-72/src/cacer.o; :; } > /home/niyue/gitRepositories/acer-wmi-for-PHN16-72/modules.order
