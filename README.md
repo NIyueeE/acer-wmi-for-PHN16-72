@@ -9,7 +9,7 @@
 ### Use
 
 1. ./make.sh 生成ko文件
-2. ./install.sh 暂时安装上修改后的ko文件, 重启后会被重置未acer_wmi
+2. ./install.sh 暂时安装上修改后的ko文件, 重启后会被重置为acer_wmi
 3. [可选] ./replace_acer-wmi.sh 完全替代acer_wmi, 重启不会重置
 4. ./setmode.sh 设置性能模式
 
